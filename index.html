@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steganography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 100px;
+        }
+
+        button {
+            margin: 10px;
+        }
+
+        #outputImage {
+            margin-top: 20px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Steganography Example</h1>
+    <input type="file" id="upload" accept="image/*"><br>
+    <canvas id="canvas" style="display:none;"></canvas><br>
+    <textarea id="text" placeholder="Enter text to encode"></textarea><br>
+    <button id="encode">Encode Text</button>
+    <button id="decode">Decode Text</button>
+    <p id="decodedText"></p>
+    <img id="outputImage" alt="Output Image">
+    <script src="./script.js"></script>
+</body>
+
+</html>
